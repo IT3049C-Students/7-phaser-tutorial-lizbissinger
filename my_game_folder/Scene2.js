@@ -139,7 +139,7 @@ class Scene2 extends Phaser.Scene{
             var scoreFormatted = this.zeroPad(this.score,6);
             this.scoreLabel.text = "SCORE " + scoreFormated;
         }
-
+    }
         zeroPad(number, size){
             var stringNumber = String(number);
             while (stringNumber.length < (size || 2)){
@@ -150,7 +150,7 @@ class Scene2 extends Phaser.Scene{
        
        
       
-    }
+    
 
     update(){
         this.moveShip(this.ship,1);
